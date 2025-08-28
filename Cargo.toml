@@ -9,8 +9,8 @@ version = "0.0.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-#args parser
-clap = { version = "4.3.14", features = ["derive"] }
+# #args parser
+# clap = { version = "4.3.14", features = ["derive"] }
 
 # #tui stuff - see https://github.com/ratatui/templates?tab=readme-ov-file
 # color-eyre = "0.6.3"
