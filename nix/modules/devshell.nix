@@ -29,18 +29,17 @@ _: {
           lazygit
 
           # iced deps
-          expat
-          fontconfig
-          freetype
-          freetype.dev
+          libxkbcommon
+
+          # GPU backend
+          vulkan-loader
           libGL
-          pkg-config
+
+          # Window system
+          wayland
           xorg.libX11
           xorg.libXcursor
           xorg.libXi
-          xorg.libXrandr
-          wayland
-          libxkbcommon
 
           # # gigdot programs
           # inputs.gigdot.packages.${system}.quick-results
