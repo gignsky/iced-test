@@ -2,6 +2,7 @@ use iced::widget::{button, column, text, Column};
 // ARGS Parser
 // use clap::Parser;
 
+#[derive(Default)]
 struct Counter {
     value: i64,
 }
@@ -51,6 +52,12 @@ fn main() {
     // if is_verbose_mode(&args) {
     //     println!("DEBUG {args:?}");
     // }
+
+    // Init the state of the runtime as per https://book.iced.rs/the-runtime.html
+    // let mut counter = Counter { value: 0 };
+    // let mut counter = Counter::default();
+
+    iced::run("A cool counter", Counter::update, Counter::view).unwrap()
 }
 
 #[test]
