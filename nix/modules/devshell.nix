@@ -1,10 +1,9 @@
 _: {
   perSystem =
-    {
-      config,
-      self',
-      pkgs,
-      ...
+    { config
+    , self'
+    , pkgs
+    , ...
     }:
     {
       devShells.default = pkgs.mkShell {
@@ -27,6 +26,7 @@ _: {
 
           # utilities
           gitflow
+          lazygit
 
           # iced deps
           expat
