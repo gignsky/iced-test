@@ -57,7 +57,7 @@ fn main() {
     // let mut counter = Counter { value: 0 };
     // let mut counter = Counter::default();
 
-    iced::run("A cool counter", Counter::update, Counter::view).unwrap()
+    iced::run("A cool counter", Counter::update, Counter::view).expect("REASON")
 }
 
 #[test]
